@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+                <div class="container-header">
+                    <div>
+                        BIENVENID@
+                    <div>
+                        <h6>¡Ingresa tusa datos para iniciar sesión!</h6>
+                <form [formGroup]="loginForm" (ngSubmit)="validar()">
+                    <div class="card-body">
+                        <label>Usuario</label>
+                        <br>
+                        <input type="text" formControlName="usuario" required>
+                    </div>
+                    <div class="card-body">
+                        <label>Contraseña</label>
+                        <br>    
+                        <input type="password" formControlName="clave" required>
+                    </div>
+                    <br>
+                    <button type="submit" class="enviar">Registrar</button>
+                </form>
+                    </div>
+                    </div>
+                </div>
+    </div>
+</div>
+
+
+
+<p>iniciar-s works!</p>

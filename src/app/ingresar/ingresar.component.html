@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+                <div class="container-header">
+                    <div>
+                        BIENVENID@
+                    <div>
+                        <h6>¡Ingresa tus datos para registrarte!</h6>
+                <form [formGroup]="loginForm" (ngSubmit)="validar()">
+                    <div class="card-body">
+                        <label>Nombres</label>
+                        <br>
+                        <input type="text" formControlName="nombre" [(ngModel)]="nombre" required>
+                    </div>
+                    <div class="card-body">
+                        <label>Apellido</label>
+                        <br>
+                        <input type="text" formControlName="apellido" [(ngModel)]="apellido" required>
+                    </div>
+                    <div class="card-body">
+                        <label>Email</label>
+                        <br>
+                        <input type="text" formControlName="email" [(ngModel)]="email" required>
+                    </div>
+                    <div class="card-body">
+                        <label>Contraseña</label>
+                        <br>
+                        <input type="password" formControlName="clave" [(ngModel)]="clave" required>
+                    </div>
+                    <br>
+                    <button type="submit" class="enviar">Registrar</button>
+                </form>
+                    </div>
+                    </div>
+                </div>
+    </div>
+</div>
+
+
+
+<p>ingresar works!</p>
